@@ -33,7 +33,7 @@ const Home = () => {
     </div>
     {/* 🍔 FOOD SECTION */}
 <div className="food-section">
-  <h2>Our Delicious Menu</h2>
+  <h2>Our Speciality</h2>
 
   <div className="food-grid">
 
