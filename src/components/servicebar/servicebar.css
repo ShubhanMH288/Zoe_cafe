@@ -1,0 +1,49 @@
+.service-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 6px 15px;
+  background: #614343;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  flex-wrap: wrap;
+}
+
+.service-box {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.service-box label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #FECE32;
+}
+
+.service-box select {
+  padding: 10px 14px;
+  border: 1px solid #e2d170;
+  border-radius: 8px;
+  background: white;
+  font-size: 13px;
+  min-width: 180px;
+  outline: none;
+}
+
+.service-box select:focus {
+  border-color: #FECE32;
+}
+.cart-icon {
+  font-size: 25px;
+  cursor: pointer;
+  margin-left: 20px;
+  transition: 0.3s;
+  color: #FECE32;
+}
+
+/* Hover effect */
+.cart-icon:hover {
+  transform: scale(1.10);
+
+}

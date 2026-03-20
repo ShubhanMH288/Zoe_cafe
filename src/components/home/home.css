@@ -1,0 +1,242 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  color: white;
+  z-index: 2;
+  width: 90%;
+}
+
+.hero-content h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.hero-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+
+  background: #fece32;
+  color: #4b2e2e;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-btn:hover {
+  transform: scale(1.08);
+  background: #ffd84d;
+}
+/* FOOD SECTION */
+.food-section {
+  padding: 50px 20px;
+  text-align: center;
+
+  /* 🔥 cool background */
+  background: linear-gradient(to bottom, #fff, #fff3b0);
+}
+
+.food-section h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #4b2e2e;
+}
+
+/* GRID */
+.food-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+/* CARD */
+.food-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+/* IMAGE */
+.food-card img {
+  width: 100%;
+  height: 250px;
+  object-fit:cover;
+}
+
+/* TEXT */
+.food-card h3 {
+  margin: 10px 0 5px;
+  color: #4b2e2e;
+}
+
+.food-card p {
+  font-size: 17px;
+  padding: 0 10px 15px;
+  color: #555;
+}
+
+/* 🔥 Hover effect */
+.food-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+.hero-btn {
+  margin-top: 20px;
+
+  width: 55px;
+  height: 55px;
+
+  border: none;
+  border-radius: 50%;
+  background: #FECE32;
+  color: #4b2e2e;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+/* 🔥 Animate the icon */
+.hero-btn svg {
+  font-size: 36px;
+  animation: slideDown 1.5s infinite;
+}
+
+/* 🔥 Sliding animation */
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+}
+
+/* Hover */
+.hero-btn:hover {
+  background: #ffd84d;
+}
+.hero-btn {
+  width: 65px;
+  height: 65px;
+}
+/* Container */
+.menu-btn-container {
+  text-align: center;
+  background: #fff3b0;
+}
+
+/* Button */
+.menu-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 14px 30px;
+  border: none;
+  border-radius: 30px;
+  margin: 5%;
+
+  background: #FECE32;
+  color: #4b2e2e;
+
+  font-size: 18px;
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Hover */
+.menu-btn:hover {
+  background: #ffd84d;
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+/* FOOTER */
+.footer {
+  background: #4b2e2e;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+/* Content row */
+.footer-content {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+/* Each item */
+.footer-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+}
+
+/* Icons */
+.footer-item svg {
+  font-size: 18px;
+  color: #FECE32;
+}
+
+/* Copy text */
+.footer-copy {
+  font-size: 14px;
+  color: #ccc;
+}

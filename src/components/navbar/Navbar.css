@@ -1,0 +1,134 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #FECE32;
+
+  /* ✨ Smooth feel */
+  transition: all 0.3s ease;
+
+  /* ✨ Modern shadow */
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Logo */
+.navlogo {
+  width: 55px;
+  height: auto;
+  margin: 0px;
+  border-radius: 0;
+  transition: transform 0.3s ease;
+}
+
+/* 🔥 Logo hover animation */
+.navlogo:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+/* Logo container */
+.navlogo-link {
+  display: flex;
+  align-items: center;
+}
+
+/* Links */
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+/* Link styling */
+.nav-links a {
+  position: relative;
+  text-decoration: none;
+  color: #4b2e2e;
+  font-weight: bold;
+  font-size: 19px;
+  transition: 0.3s;
+}
+
+/* 🔥 Hover color */
+.nav-links a:hover {
+  color: #333;
+}
+
+/* 🔥 Underline animation */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: black;
+  transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* 🔥 Click effect */
+.nav-links a:active {
+  transform: scale(0.95);
+}
+
+/* 🔥 Sticky navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.nav-links a.active {
+  border-bottom: 2px solid black;
+}
+.brand-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4b2e2e;
+}
+
+/* Zoe stylish */
+.brand-name span {
+  font-family: 'Pacifico', cursive;
+  font-size: 26px;
+}
+
+/* Cafe clean */
+.brand-name {
+  font-family: 'Poppins', sans-serif;
+}
+.brand-name {
+  position: relative;
+  font-size: 24px;
+  font-weight: 700;
+  color: #4b2e2e;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+/* underline */
+.brand-name::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: black;
+  transition: 0.3s;
+}
+
+.brand-name:hover::after {
+  width: 100%;
+}
+.brand-name:hover {
+  transform: scale(1.08);
+}
+#icons{
+  color:#4b2e2e
+}
+#icons:hover{
+  transform: scale(1.10);
+}
