@@ -8,6 +8,8 @@ import coffee from '../../assets/coffee.png'
 import burger from '../../assets/burger.png'
 import desserts from '../../assets/desserts.png'
 import ramen from '../../assets/ramen.png'
+import pancake from '../../assets/pancake.png'
+import wraps from '../../assets/wraps.png'
 import { FaInstagram, FaPhone } from "react-icons/fa"
 const Home = () => {
   const navigate = useNavigate()
@@ -40,27 +42,40 @@ const Home = () => {
     <div className="food-card">
       <img src={burger} />
       <h3>Burger</h3>
-      <p>Juicy and tasty burgers made fresh.</p>
+      <p>Stacked high, packed with flavor!.</p>
     </div>
 
     <div className="food-card">
       <img src={coffee} />
       <h3>Coffee</h3>
-      <p>Hot and cold coffee with rich flavor.</p>
+      <p>Your daily dose of happiness in a cup 💯.</p>
     </div>
 
     <div className="food-card">
       <img src={ramen} />
       <h3>Ramen</h3>
-      <p>Delicious Japanese noodles in a rich broth.</p>
+      <p>Slurp into happiness 🍜🔥.</p>
     </div>
 
     <div className="food-card">
       <img src={desserts} />
       <h3>Desserts</h3>
-      <p>Sweet treats to complete your meal.</p>
+      <p>Desserts that melt your heart 💯.</p>
     </div>
 
+     <div className="food-card">
+      <img src={wraps} />
+      <h3>Wraps</h3>
+      <p>Everything you love, Wrapped in one delicious bite.</p>
+    </div>
+
+     <div className="food-card" >
+      <img src={pancake} />
+      <h3>Pancake</h3>
+      <p>Flip your worries like panckakes and enjoy the moment.</p>
+    </div>
+
+    
   </div>
 </div>
 <div className="menu-btn-container">
