@@ -23,12 +23,10 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   text-align: center;
   color: white;
   z-index: 2;
@@ -50,13 +48,11 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-
   padding: 12px 24px;
   border: none;
   border-radius: 8px;
   font-size: 20px;
   font-weight: bold;
-
   background: #fece32;
   color: #4b2e2e;
   cursor: pointer;
@@ -67,11 +63,11 @@
   transform: scale(1.08);
   background: #ffd84d;
 }
+
 /* FOOD SECTION */
 .food-section {
   padding: 50px 20px;
   text-align: center;
-
   /* 🔥 cool background */
   background: linear-gradient(to bottom, #fff, #fff3b0);
 }
@@ -82,64 +78,66 @@
   color: #4b2e2e;
 }
 
-/* GRID */
 .food-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(250px, 1fr));
-  gap: 25px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  padding: 20px 20px;
 }
 
-/* CARD */
 .food-card {
-  background: white;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-  transition: 0.3s;
+  background: #f8d47f; /* soft matte color */
+  border-radius: 16px;
+  padding: 12px;
+
+  box-shadow: 
+    0 2px 6px rgba(252, 186, 157, 0.06),   /* very soft shadow */
+    inset 0 1px 0 rgba(255, 1, 1, 0.4); /* subtle top light */
+
+  transition: 0.3s ease;
 }
 
-/* IMAGE */
+.food-card:hover {
+  transform: translateY(-6px);
+}
+
+/* 🔥 circle image like your reference */
 .food-card img {
-  width: 100%;
-  aspect-ratio: 4 / 3;   /* keeps uniform look */
-  object-fit: cover;     /* minimal crop */
-  border-radius: 12px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: -60px;
+  /* makes image float */
+  background: #fff;
+  padding: 6px;
 }
 
-/* TEXT */
+/* text */
 .food-card h3 {
-  margin: 10px 0 5px;
-  color: #4b2e2e;
+  margin-top: 10px;
+  font-size: 25px;
+  color: #333;
 }
 
 .food-card p {
-  font-size: 17px;
-  padding: 0 10px 15px;
-  color: #555;
+  font-size: 18px;
+  color: #777;
 }
 
-/* 🔥 Hover effect */
-.food-card:hover {
-  transform: translateY(-10px) scale(1.03);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-}
+
 .hero-btn {
   margin-top: 20px;
-
   width: 55px;
   height: 55px;
-
   border: none;
   border-radius: 50%;
   background: #FECE32;
   color: #4b2e2e;
-
   cursor: pointer;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   overflow: hidden;
 }
 
@@ -155,9 +153,11 @@
     opacity: 0;
     transform: translateY(-10px);
   }
+
   50% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
     transform: translateY(15px);
@@ -168,10 +168,12 @@
 .hero-btn:hover {
   background: #ffd84d;
 }
+
 .hero-btn {
   width: 65px;
   height: 65px;
 }
+
 /* Container */
 .menu-btn-container {
   text-align: center;
@@ -183,18 +185,14 @@
   display: inline-flex;
   align-items: center;
   gap: 10px;
-
   padding: 14px 30px;
   border: none;
   border-radius: 30px;
   margin: 5%;
-
   background: #FECE32;
   color: #4b2e2e;
-
   font-size: 18px;
   font-weight: bold;
-
   cursor: pointer;
   transition: 0.3s;
 }
@@ -203,8 +201,9 @@
 .menu-btn:hover {
   background: #ffd84d;
   transform: scale(1.05);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
+
 /* FOOTER */
 .footer {
   background: #4b2e2e;
@@ -241,6 +240,7 @@
   font-size: 14px;
   color: #ccc;
 }
+
 @media (max-width: 768px) {
   .food-grid {
     grid-template-columns: repeat(2, 1fr);
