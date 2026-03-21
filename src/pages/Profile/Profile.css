@@ -1,0 +1,86 @@
+.profile-page {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: linear-gradient(to bottom, #fff, #fff3b0);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.profile-card,
+.orders-card {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 22px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.profile-card h1,
+.orders-card h2 {
+  text-align: center;
+  color: #4b2e2e;
+  margin-bottom: 20px;
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.profile-form input {
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  outline: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.profile-form input:focus {
+  border-color: #f4c430;
+  box-shadow: 0 0 8px rgba(244, 196, 48, 0.4);
+}
+
+.profile-form button {
+  padding: 14px;
+  border: none;
+  border-radius: 14px;
+  background: #f4c430;
+  color: #4b2e2e;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.profile-form button:hover {
+  transform: scale(1.03);
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.order-box {
+  background: #fffdf2;
+  border: 1px solid #f1e3a0;
+  border-radius: 16px;
+  padding: 18px;
+}
+
+.order-box ul {
+  margin-top: 8px;
+  padding-left: 20px;
+}
+
+.profile-loading {
+  text-align: center;
+  margin-top: 100px;
+  color: #4b2e2e;
+}

@@ -1,0 +1,383 @@
+.admin-dashboard {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #fff, #fff3b0);
+}
+
+/* LEFT SIDEBAR */
+.admin-sidebar {
+  background: #4b2e2e;
+  color: white;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.admin-sidebar h2 {
+  margin-bottom: 20px;
+  color: #fece32;
+  font-size: 28px;
+}
+
+.admin-sidebar button {
+  padding: 14px 16px;
+  border: none;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.12);
+  color: white;
+  font-size: 16px;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.admin-sidebar button:hover,
+.admin-sidebar .active-tab {
+  background: #fece32;
+  color: #4b2e2e;
+  font-weight: bold;
+}
+
+/* RIGHT SIDE */
+.admin-content {
+  padding: 30px;
+}
+
+.section-box h1 {
+  color: #4b2e2e;
+  margin-bottom: 10px;
+  font-size: 34px;
+}
+
+.section-box p {
+  color: #666;
+  margin-bottom: 22px;
+}
+
+/* FORM */
+.admin-form {
+  max-width: 650px;
+  display: grid;
+  gap: 16px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 24px;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.admin-form input {
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  font-size: 16px;
+  outline: none;
+  background: white;
+}
+
+.admin-form input:focus {
+  border-color: #fece32;
+  box-shadow: 0 0 8px rgba(254, 206, 50, 0.35);
+}
+
+.admin-form button {
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: #fece32;
+  color: #4b2e2e;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* MENU CARDS */
+.admin-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.admin-card {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 18px;
+  padding: 14px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+.admin-card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+  background: #f3ead2;
+}
+
+.admin-card h3 {
+  margin: 12px 0 6px;
+  color: #4b2e2e;
+  font-size: 22px;
+}
+
+.admin-card p {
+  margin: 0 0 6px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #222;
+}
+
+.admin-card small {
+  display: inline-block;
+  margin-bottom: 14px;
+  color: #6b4f3f;
+}
+
+.admin-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.admin-actions button {
+  flex: 1;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.admin-actions button:first-child {
+  background: #fece32;
+  color: #4b2e2e;
+}
+
+.admin-actions button:last-child {
+  background: #4b2e2e;
+  color: white;
+}
+
+.reference-card p {
+  margin-bottom: 0;
+}
+
+/* ORDERS */
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.order-card {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+  border-left: 6px solid #fece32;
+}
+
+.order-card p {
+  margin: 8px 0;
+  color: #4b2e2e;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.order-card strong {
+  color: #2f1b1b;
+}
+
+.order-items {
+  margin-top: 12px;
+  padding: 14px;
+  border-radius: 14px;
+  background: rgba(255, 248, 220, 0.7);
+}
+
+.order-items ul {
+  margin-top: 8px;
+  padding-left: 20px;
+}
+
+.order-items li {
+  margin-bottom: 6px;
+  color: #5a4033;
+  font-size: 15px;
+}
+
+.order-card .admin-actions {
+  margin-top: 16px;
+}
+
+.order-card .admin-actions button {
+  flex: unset;
+  min-width: 110px;
+}
+
+.order-card .admin-actions button:nth-child(1) {
+  background: #fece32;
+  color: #4b2e2e;
+}
+
+.order-card .admin-actions button:nth-child(2) {
+  background: #d98c00;
+  color: white;
+}
+
+.order-card .admin-actions button:nth-child(3) {
+  background: #4b2e2e;
+  color: white;
+}
+
+.cancel-reason-box {
+  margin-top: 14px;
+  padding: 12px;
+  border-radius: 12px;
+  background: #fff3f3;
+  border: 1px solid #f5bcbc;
+}
+
+.order-card .admin-actions button:last-child {
+  background: #c62828;
+  color: white;
+}
+
+/* MODAL */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  padding: 20px;
+}
+
+.cancel-modal {
+  width: 100%;
+  max-width: 460px;
+  background: #fffdf6;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
+}
+
+.cancel-modal h2 {
+  color: #4b2e2e;
+  margin-bottom: 8px;
+}
+
+.cancel-modal p {
+  color: #666;
+  margin-bottom: 14px;
+}
+
+.cancel-select,
+.cancel-textarea {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-size: 15px;
+  outline: none;
+  margin-bottom: 14px;
+  background: white;
+}
+
+.cancel-textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.cancel-select:focus,
+.cancel-textarea:focus {
+  border-color: #fece32;
+  box-shadow: 0 0 8px rgba(254, 206, 50, 0.35);
+}
+
+.modal-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.modal-btn {
+  border: none;
+  border-radius: 12px;
+  padding: 12px 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cancel-no {
+  background: #e0e0e0;
+  color: #333;
+}
+
+.cancel-yes {
+  background: #c62828;
+  color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .admin-dashboard {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-sidebar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .admin-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .admin-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-content {
+    padding: 18px;
+  }
+
+  .section-box h1 {
+    font-size: 28px;
+  }
+
+  .admin-sidebar h2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .admin-sidebar button {
+    text-align: center;
+  }
+
+  .order-card {
+    padding: 16px;
+  }
+
+  .order-card .admin-actions {
+    flex-direction: column;
+  }
+
+  .order-card .admin-actions button {
+    width: 100%;
+  }
+
+  .modal-actions {
+    flex-direction: column;
+  }
+
+  .modal-btn {
+    width: 100%;
+  }
+}

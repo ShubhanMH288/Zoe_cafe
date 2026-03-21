@@ -27,7 +27,6 @@ const Home = () => {
 
         <button
           className="hero-btn"
-          onClick={() => navigate('/menu')}
         >
           <FaChevronDown /> 
         </button>
